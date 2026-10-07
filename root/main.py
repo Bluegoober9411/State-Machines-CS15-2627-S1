@@ -1,67 +1,67 @@
-# STILL REDOING - NOT READY TO MARK
-
-state = "coding"
+state = "Standing"
 
 while True:
 
-    if state == "coding":
-        print("\n=== CODING ===")
-        print("You are coding!")
-        print("Options: tired, hungry")
+    if state == "Standing":
+        print("\n=== STANDING ===")
+        print("You are Standing still...?")
+        print("Options: cry, sleep, eat")
 
-        event = input("Choose an event: ").lower()
+        event = input("enter text here: ").lower()
 
-        if event == "tired":
+        if event == "sleep":
             state = "sleeping"
-        elif event == "hungry":
+        elif event == "eat":
             state = "eating"
+        elif event == "cry":
+            state = "crying"
         else:
-            print("Invalid event! State unchanged.")
+            print("Not one of the options i gave you bucko.")
 
     elif state == "eating":
         print("\n=== EATING ===")
-        print("You are eating!")
-        print("Options: full, tired")
+        print("You are eating something you found on the floor!")
+        print("Options: full, sleep, cry")
 
-        event = input("Choose an event: ").lower()
+        event = input("Man i'm hungry...: ").lower()
 
         if event == "full":
-            state = "coding"
-        elif event == "tired":
+            state = "Standing"
+        elif event == "sleep":
             state = "sleeping"
+        elif event == "cry":
+            state = "crying"
         else:
-            print("Invalid event! State unchanged.")
+            print("bro, not an option.")
 
     elif state == "sleeping":
         print("\n=== SLEEPING ===")
-        print("You are sleeping!")
-        print("Options: awake, hungry")
+        print("You are sleeping, nothing much to say!")
+        print("Options: wake up, cry, eat")
 
-        event = input("Choose an event: ").lower()
+        event = input("Why do you read these?: ").lower()
 
-        if event == "awake":
-            state = "coding"
-        elif event == "hungry":
+        if event == "Wake up":
+            state = "Standing"
+        elif event == "eat":
             state = "eating"
+        elif event == "cry":
+            state = "crying"
         else:
-            print("Invalid event! State unchanged.")
+            print("nope. try again.")
 
-    elif state == "relaxing":
-        print("\n=== RELAXING ===")
-        print("You are relaxing!")
-        print("Options: bored, hungry")
+    elif state == "crying":
+        print("\n=== CRYING ===")
+        print("You are crying becuase you feel like it.")
+        print("Options: stop, eat, sleep")
 
-        event = input("Choose an event: ").lower()
+        event = input("Do something: ").lower()
 
-        if event == "bored":
-            state = "coding"
-        elif event == "hungry":
+        if event == "stop":
+            state = "Standing"
+        elif event == "eat":
             state = "eating"
+        elif event == "cry":
+            state = "crying"
         else:
-            print("Invalid event! State unchanged.")
-
-    # Extra transitions to make the 4th state reachable
-    if state == "coding":
-        choice = input("Take a break? (yes/no): ").lower()
-        if choice == "yes":
-            state = "relaxing"
+            print("*wrong buzzer sound effect*.")
