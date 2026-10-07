@@ -3,7 +3,7 @@ state = "Standing"
 while True:
 
     if state == "Standing":
-        print("\n=== STANDING ===")
+        print("\n9(-) STANDING (-) ")
         print("You are Standing still...?")
         print("Options: cry, sleep, eat")
 
@@ -19,7 +19,7 @@ while True:
             print("Not one of the options i gave you bucko.")
 
     elif state == "eating":
-        print("\n=== EATING ===")
+        print("\n--- EATING ---")
         print("You are eating something you found on the floor!")
         print("Options: full, sleep, cry")
 
@@ -35,7 +35,7 @@ while True:
             print("bro, not an option.")
 
     elif state == "sleeping":
-        print("\n=== SLEEPING ===")
+        print("\nzzz...SLEEPING...zzz")
         print("You are sleeping, nothing much to say!")
         print("Options: wake up, cry, eat")
 
@@ -51,7 +51,7 @@ while True:
             print("nope. try again.")
 
     elif state == "crying":
-        print("\n=== CRYING ===")
+        print("\n+++ CRYING +++")
         print("You are crying becuase you feel like it.")
         print("Options: stop, eat, sleep")
 
